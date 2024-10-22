@@ -14,7 +14,7 @@ function Navbar() {
   const setArrowChange = useSetRecoilState(arrow);
 
   return (
-    <div className='flex justify-between items-center'>
+    <div className='fixed top-0 left-0 w-full flex justify-between items-center pl-16 pr-12 py-2'>
         <div>
             <img className='w-52 h-14 cursor-pointer' src={logo}/>
         </div>

@@ -16,7 +16,7 @@ function HeroSection() {
   const setArrowChange = useSetRecoilState(arrow);
 
   return (
-    <div className='mt-32 grid grid-cols-2'>
+    <div className='mt-48 grid grid-cols-2'>
         <div>
           <div className='flex items-center text-lg tracking-tight border border-slate-400 rounded-3xl w-52 px-4 py-1'>
             <GoDotFill />
@@ -66,7 +66,7 @@ function HeroSection() {
               </div>
             </div>
         </div>
-        <div className='pt-28 flex space-x-4 text-2xl text-[#666666] cursor-pointer'>
+        <div className='pt-24 flex space-x-4 text-2xl text-[#666666] cursor-pointer'>
           <FaLinkedinIn className='hover:text-black'/>
           <FaInstagram className='hover:text-black'/>
           <RiGoogleFill className='hover:text-black'/>
