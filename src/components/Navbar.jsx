@@ -4,10 +4,14 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
 import { RiArrowUpSLine } from "react-icons/ri";
+import { useRecoilValue, useSetRecoilState } from 'recoil';
+import { arrow } from '../state/arrow';
 
 function Navbar() {
   const [services, setServices] = useState(false);
-  const [arrowChange, setArrowChange] = useState(false);
+  
+  const arrowChange = useRecoilValue(arrow);
+  const setArrowChange = useSetRecoilState(arrow);
 
   return (
     <div className='flex justify-between items-center'>
