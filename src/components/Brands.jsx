@@ -3,16 +3,14 @@ import corkHaus from '../assets/cork-haus.png'
 import boatworks from '../assets/boatworks.png'
 import landau from '../assets/landau.png'
 import lore from '../assets/lore.png'
-import seaCat from '../assets/sea-cat.png'
 
 function Brands() {
   return (
-    <div>
-        <img src={boatworks}/>
-        <img className='bg-black' src={corkHaus}/>
-        <img src={landau}/>
-        <img src={lore}/>
-        <img src={seaCat}/>
+    <div className='flex bg-black mt-10 -mx-12'>
+        <img className='border-r-[1px] border-gray-700 w-full h-auto flex-grow hover:opacity-60' src={boatworks}/>
+        <img className='border-r-[1px] border-gray-700 w-full h-auto flex-grow hover:opacity-60' src={corkHaus}/>
+        <img className='border-r-[1px] border-gray-700 w-full h-auto flex-grow hover:opacity-60' src={landau}/>
+        <img className='w-full h-auto flex-grow hover:opacity-60' src={lore}/>
     </div>
   )
 }
