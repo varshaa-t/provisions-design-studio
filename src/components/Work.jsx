@@ -1,16 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GoArrowRight } from "react-icons/go";
 import { FiArrowUpRight } from "react-icons/fi";
-import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { arrow } from '../state/arrow';
 
 function Work() {
     const workOne = new URL("../assets/work-1.jpg", import.meta.url).href;
     const workTwo = new URL("../assets/work-2.jpg", import.meta.url).href;
     const workThree = new URL("../assets/work-3.jpg", import.meta.url).href;
 
-    const arrowChange = useRecoilValue(arrow);
-    const setArrowChange = useSetRecoilState(arrow);
+    const [arrowHover, setArrowHover] = useState(false);
 
   return (
     <div className='flex flex-col -mx-12 px-12 bg-white'>
@@ -21,11 +18,11 @@ function Work() {
             </div>
             <button 
                 className='flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl text-lg mt-12 tracking-tight'
-                onMouseEnter={() => setArrowChange(true)}
-                onMouseLeave={() => setArrowChange(false)}
+                onMouseEnter={() => setArrowHover(true)}
+                onMouseLeave={() => setArrowHover(false)}
             >
                 <div>Explore more</div>
-                {arrowChange ? 
+                {arrowHover ? 
                     <GoArrowRight className='text-4xl bg-white rounded-full py-2 rotate-[-40deg]'/> :
                     <GoArrowRight className='text-4xl bg-white rounded-full py-2'/>
                 }   

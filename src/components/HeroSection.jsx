@@ -1,19 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GoDotFill } from "react-icons/go";
 import { GoArrowRight } from "react-icons/go";
 import { FaGoogle } from "react-icons/fa6";
 import { IoStarSharp } from "react-icons/io5";
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { RiGoogleFill } from "react-icons/ri";
-import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { arrow } from '../state/arrow';
 import heroPic1 from '../assets/heroPic1.png'
 import heroPic2 from '../assets/heroPic2.svg';
 
 function HeroSection() {
-  
-  const arrowChange = useRecoilValue(arrow);
-  const setArrowChange = useSetRecoilState(arrow);
+
+  const [arrowHover, setArrowHover] = useState(false);
 
   return (
     <div className='mt-48 grid grid-cols-2'>
@@ -30,11 +27,11 @@ function HeroSection() {
           </div>
           <button 
             className='flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl text-lg mt-12'
-            onMouseOver={() => setArrowChange(true)}
-            onMouseLeave={() => setArrowChange(false)}
+            onMouseOver={() => setArrowHover(true)}
+            onMouseLeave={() => setArrowHover(false)}
           >
             <div>Explore more</div>
-            {arrowChange ? 
+            {arrowHover ? 
               <GoArrowRight className='text-4xl bg-white rounded-full py-2 rotate-[-40deg]'/> :
               <GoArrowRight className='text-4xl bg-white rounded-full py-2'/>
             }

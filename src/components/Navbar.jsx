@@ -4,15 +4,10 @@ import { RiArrowDownSLine } from "react-icons/ri";
 import { GoArrowRight } from "react-icons/go";
 import { Link } from 'react-router-dom';
 import { RiArrowUpSLine } from "react-icons/ri";
-import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { arrow } from '../state/arrow';
 
 function Navbar() {
   const [services, setServices] = useState(false);
-  
-  const arrowChange = useRecoilValue(arrow);
-  const setArrowChange = useSetRecoilState(arrow);
-
+  const [arrowHover, setArrowHover] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
@@ -70,11 +65,11 @@ function Navbar() {
         </ul>
         <button 
           className='flex space-x-6 items-center bg-black pl-5 pr-3 py-2 rounded-3xl tracking-tighter'
-          onMouseOver={() => setArrowChange(true)}
-          onMouseLeave={() => setArrowChange(false)}
+          onMouseOver={() => setArrowHover(true)}
+          onMouseLeave={() => setArrowHover(false)}
         >
           <div className='text-lg text-white'>Contact us</div>
-          {arrowChange ? 
+          {arrowHover ? 
             <GoArrowRight className='text-4xl bg-white rounded-full py-2 rotate-[-40deg]'/> :
             <GoArrowRight className='text-4xl bg-white rounded-full py-2'/> 
           }

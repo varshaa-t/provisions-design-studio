@@ -1,15 +1,12 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { GoArrowRight } from "react-icons/go";
 import logo from '../assets/logo.png'
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
 import { RiGoogleFill } from "react-icons/ri";
-import { useRecoilValue, useSetRecoilState } from 'recoil';
-import { arrow } from '../state/arrow';
 
 function Footer() {
 
-    const arrowChange = useRecoilValue(arrow);
-    const setArrowChange = useSetRecoilState(arrow);
+    const [arrowHover, setArrowHover] = useState(false);
 
   return (
     <div className='bg-white -mx-12 px-12 pt-32 flex flex-col pb-6'>
@@ -25,11 +22,11 @@ function Footer() {
                 </div>
                 <button 
                     className='flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl text-lg mt-12 tracking-tight'
-                    onMouseEnter={() => setArrowChange(true)}
-                    onMouseLeave={() => setArrowChange(false)}
+                    onMouseEnter={() => setArrowHover(true)}
+                    onMouseLeave={() => setArrowHover(false)}
                 >
                     <div>Start a project</div>
-                    {arrowChange ? 
+                    {arrowHover ? 
                         <GoArrowRight className='text-4xl bg-white rounded-full py-2 rotate-[-40deg]'/> :
                         <GoArrowRight className='text-4xl bg-white rounded-full py-2'/>
                     }
