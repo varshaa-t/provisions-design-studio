@@ -22,7 +22,7 @@ function HeroSection() {
             <GoDotFill />
             <div>Web Design Agency</div>
           </div>
-          <div className='mt-8 w-[48vw] text-[100px] font-semibold leading-[6rem] tracking-tight'>
+          <div className='mt-8 w-[48vw] text-[100px] font-semibold leading-[6.7rem] tracking-tight'>
             The best solution for your website
           </div>
           <div className='mt-20 w-[23vw] text-lg tracking-tight'>

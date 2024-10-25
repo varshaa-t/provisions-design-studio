@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import logo from '../assets/logo.png'
 import { RiArrowDownSLine } from "react-icons/ri";
 import { GoArrowRight } from "react-icons/go";
@@ -13,12 +13,23 @@ function Navbar() {
   const arrowChange = useRecoilValue(arrow);
   const setArrowChange = useSetRecoilState(arrow);
 
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 100)
+    }
+    window.addEventListener('scroll', handleScroll);
+
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
-    <div className='fixed top-0 left-0 w-full flex justify-between items-center pl-16 pr-12 py-2'>
+    <div className={`fixed top-0 left-0 z-20 w-full flex justify-between items-center pl-16 pr-12 py-2 ${isScrolled ? 'bg-[rgba(255,255,255,0.5)] backdrop-blur-md' : ''}`}>
         <div>
             <img className='w-52 h-14 cursor-pointer' src={logo}/>
         </div>
-        <ul className='flex space-x-10 text-[#73748c] cursor-pointer text-lg tracking-tight relative'>
+        <ul className='flex space-x-10 text-gray cursor-pointer text-lg tracking-tight relative'>
             <li className='text-black'>Home</li>
             <li 
               className='flex items-center space-x-2 hover:text-black'
@@ -32,7 +43,7 @@ function Navbar() {
               }
               {services && 
                 <div 
-                  className='bg-white flex flex-col rounded-xl absolute top-7 left-14 text-[#73748c]'
+                  className='bg-white flex flex-col rounded-xl absolute top-7 left-14 text-gray'
                   onMouseOver={() => setServices(true)}
                   onMouseLeave={() => setServices(false)}
                 >

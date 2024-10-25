@@ -1,4 +1,3 @@
-/** @type {import('tailwindcss').Config} */
 export default {
   content: [
     "./index.html",
@@ -7,7 +6,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        'neon-green': '#cdf163'
+        'neon-green': '#cdf163',
+        'gray': '#73748c'
       }
     },
   },
