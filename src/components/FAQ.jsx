@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { FaPlus } from "react-icons/fa";
 import { FaMinus } from "react-icons/fa";
+import { motion } from 'framer-motion';
 
-function FAQ() {
+function FAQ({animationProps}) {
     const faqImage = new URL("../assets/faq.jpg", import.meta.url).href;
 
     const [accordionOpen, setAccordionOpen] = useState(Array(5).fill(false));
@@ -33,14 +34,27 @@ function FAQ() {
   return (
     <div className='-mx-12 px-12 bg-neon-green pt-24 pb-32'>
         <div className='flex justify-start items-center space-x-40 pb-10'>
-            <div className='text-[5rem] font-medium'>FAQ</div>
-            <div className='w-[55vw] text-[1.05rem] leading-7 tracking-tight'>
+            <motion.div 
+                className='text-[5rem] font-medium'
+                {...animationProps}
+            >
+                FAQ
+            </motion.div>
+            <motion.div 
+                className='w-[55vw] text-[1.05rem] leading-7 tracking-tight'
+                {...animationProps}
+                transition={{...animationProps.transition, delay: 0.2}}
+            >
                 Discover solutions to commonly asked questions in our FAQ section. Don't 
                 hesitate to get in touch with us for further clarification or to discuss 
                 any inquiries you may have. We're always available to assist you!
-            </div>
+            </motion.div>
         </div>
-        <div className='flex justify-between'>
+        <motion.div 
+            className='flex justify-between'
+            {...animationProps}
+            transition={{...animationProps.transition, delay: 0.4}}
+        >
             <div className='bg-white h-full p-4 rounded-2xl tracking-tight text-[1.13rem] leading-7'>
                 <div className='w-[36rem] space-y-4 divide-y'>
                 {contents.map((content, index) => (
@@ -68,7 +82,7 @@ function FAQ() {
                     src={faqImage}
                 />
             </div>
-        </div>
+        </motion.div>
     </div>
   )
 }
