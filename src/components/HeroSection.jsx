@@ -99,7 +99,7 @@ function HeroSection() {
         <div className='relative'>
           <motion.img 
             className='bg-white rounded-3xl absolute py-4 px-6 -top-16 z-10 left-28' 
-            src={"https://provisions.studio/wp-content/uploads/2024/07/roi_img-1.svg#703"}
+            src={"https://provisions.studio/wp-content/uploads/2024/03/Group-240-2.svg#416"}
             variants={childVariants2}
           />
           <motion.img 
