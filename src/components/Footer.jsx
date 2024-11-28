@@ -36,13 +36,12 @@ function Footer() {
         <div className='flex justify-between mt-32 mb-10'>
             <div className='flex flex-col space-y-8 tracking-tight text-lg'>   
                 <div className='w-[12vw]'>
-                    25 SE 2nd Ave. Ste 550
-                    Miami, FL 33131
+                    136 Park La Brea Eve Suite 300 Atlanta, GA 30350, USA
                 </div>
                 <div>
-                    <div>info@provisions.studio</div>
-                    <div>Atlanta: (470) 365-1514</div>
-                    <div>Miami: (786) 723-6079</div>
+                    <div>provisions@info</div>
+                    <div>Atlanta: (000) 111-2222</div>
+                    <div>Miami: (123) 456-7890</div>
                 </div>
             </div>
             <div className='-ml-20'>
