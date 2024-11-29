@@ -2,26 +2,26 @@ import React, { useState } from 'react'
 import { GoArrowRight } from "react-icons/go";
 import logo from '../assets/logo.png'
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
-import { RiGoogleFill } from "react-icons/ri";
 
 function Footer() {
 
     const [arrowHover, setArrowHover] = useState(false);
 
   return (
-    <div className='bg-white -mx-12 px-12 pt-32 flex flex-col pb-6'>
-        <div className='flex justify-between'>
-            <div className='text-[5rem] leading-[5.5rem] font-medium tracking-tight'>
-                <div>We're ready!</div>
-                <div>Let’s collaborate</div>
+    <div className='bg-white -mx-12 px-6 md:px-12 pt-20 md:pt-32 flex flex-col pb-6'>
+        <div className='flex flex-col md:flex-row justify-between'>
+            <div className='text-left w-[350px] text-5xl md:text-[4rem] md:w-[37vw] md:leading-[5.5rem] lg:text-[5rem] font-medium tracking-tight'>
+                <div>
+                    We're ready! Let’s collaborate
+                </div>
             </div>
-            <div className='flex flex-col items-end'>
-                <div className='w-[33vw] text-right tracking-tight text-[1.1rem]'>
+            <div className='flex flex-col items-start md:items-end'>
+                <div className='text-base text-left pt-12 md:pt-0 md:text-[1.1rem] md:w-[33vw] md:text-right tracking-tight'>
                     Let's collaborate to turn your vision into reality and create a 
                     digital presence that sets you apart from the competition.
                 </div>
                 <button 
-                    className='flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl text-lg mt-12 tracking-tight'
+                    className='text-base lg:text-lg flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl mt-12 tracking-tight'
                     onMouseEnter={() => setArrowHover(true)}
                     onMouseLeave={() => setArrowHover(false)}
                 >
@@ -33,9 +33,9 @@ function Footer() {
                 </button>
             </div>
         </div>
-        <div className='flex justify-between mt-32 mb-10'>
+        <div className='flex flex-col space-y-8 lg:space-y-0 lg:flex-row justify-between mt-20 md:mt-32 mb-10'>
             <div className='flex flex-col space-y-8 tracking-tight text-lg'>   
-                <div className='w-[12vw]'>
+                <div className='lg:w-[12vw]'>
                     136 Park La Brea Eve Suite 300 Atlanta, GA 30350, USA
                 </div>
                 <div>
@@ -44,27 +44,26 @@ function Footer() {
                     <div>Miami: (123) 456-7890</div>
                 </div>
             </div>
-            <div className='-ml-20'>
+            <div className='lg:-ml-20'>
                 <img 
                     className='w-[290px] h-[80px]'
                     src={logo}
                 />
             </div>
-            <ul className='text-gray flex flex-col items-end space-y-3 text-[1.1rem] tracking-tight hover:cursor-pointer'>
+            <ul className='text-gray flex flex-col lg:items-end space-y-3 text-[1.1rem] tracking-tight hover:cursor-pointer'>
                 <li className='text-black'>Home</li>
                 <li className='hover:text-black'>Services</li>
                 <li className='hover:text-black'>Pricing</li>
                 <li className='hover:text-black'>Contact</li>
             </ul>
         </div>
-        <div className='flex justify-between'>
-            <div>
+        <div className='flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'>
+            <div className='text-center md:text-left'>
                 Copyright © 2024 Provision. All Rights Reserved. | Privacy Policy
             </div>
-            <div className='flex space-x-4 text-2xl text-gray hover:cursor-pointer'>
+            <div className='flex justify-center md:justify-start space-x-4 text-2xl text-gray hover:cursor-pointer'>
                 <FaLinkedinIn className='hover:text-black'/>
                 <FaInstagram className='hover:text-black'/>
-                <RiGoogleFill className='hover:text-black'/>
             </div>
         </div>
     </div>

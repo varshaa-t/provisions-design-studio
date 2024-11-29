@@ -33,15 +33,15 @@ function FAQ({animationProps}) {
 
   return (
     <div className='-mx-12 px-12 bg-neon-green pt-24 pb-32'>
-        <div className='flex justify-start items-center space-x-40 pb-10'>
+        <div className='flex flex-col md:flex-row md:items-center items-start space-x-0 md:space-x-16 lg:space-x-40 pb-10'>
             <motion.div 
-                className='text-[5rem] font-medium'
+                className='text-[4rem] lg:text-[5rem] font-medium'
                 {...animationProps}
             >
                 FAQ
             </motion.div>
             <motion.div 
-                className='w-[55vw] text-[1.05rem] leading-7 tracking-tight'
+                className='lg:w-[55vw] text-[1.05rem] leading-7 tracking-tighter lg:tracking-tight'
                 {...animationProps}
                 transition={{...animationProps.transition, delay: 0.2}}
             >
@@ -51,19 +51,19 @@ function FAQ({animationProps}) {
             </motion.div>
         </div>
         <motion.div 
-            className='flex justify-between'
+            className='flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'
             {...animationProps}
             transition={{...animationProps.transition, delay: 0.4}}
         >
             <div className='bg-white h-full p-4 rounded-2xl tracking-tight text-[1.13rem] leading-7'>
-                <div className='w-[36rem] space-y-4 divide-y'>
+                <div className='md:w-[40vw] space-y-4 divide-y'>
                 {contents.map((content, index) => (
                     <div key={index} className='divide-y pt-4'>
                         <button
                             onClick={() => toggleAccordion(index)}
                             className='flex justify-between w-full items-center pb-2 px-2'
                         >
-                            <div>{content.question}</div>
+                            <div className='text-left w-[55vw] sm:w-auto md:w-[40vw] text-lg'>{content.question}</div>
                             {accordionOpen[index] ? 
                                 <FaMinus className='bg-black text-white py-2 text-3xl rounded-full'/> :
                                 <FaPlus className='bg-black text-white py-2 text-3xl rounded-full'/>
@@ -78,7 +78,7 @@ function FAQ({animationProps}) {
             </div>
             <div>
                 <img
-                    className='w-[600px] h-[470px] object-cover rounded-3xl' 
+                    className='w-[80vw] h-[30vh] md:w-[40vw] md:h-[470px] object-cover rounded-3xl' 
                     src={faqImage}
                 />
             </div>
