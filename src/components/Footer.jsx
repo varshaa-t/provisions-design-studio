@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { GoArrowRight } from "react-icons/go";
 import logo from '../assets/logo.png'
 import { FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { NavLink } from 'react-router-dom';
 
 function Footer() {
 
@@ -51,10 +52,46 @@ function Footer() {
                 />
             </div>
             <ul className='text-gray flex flex-col lg:items-end space-y-3 text-[1.1rem] tracking-tight hover:cursor-pointer'>
-                <li className='text-black'>Home</li>
-                <li className='hover:text-black'>Services</li>
-                <li className='hover:text-black'>Pricing</li>
-                <li className='hover:text-black'>Contact</li>
+                <li className='hover:text-black'>
+                    <NavLink
+                        to={"/home"}
+                        className={({isActive}) =>
+                            isActive ? "text-black" : "text-gray"
+                        }
+                    >
+                        Home
+                    </NavLink>
+                </li>
+                <li className='hover:text-black'>
+                    <NavLink
+                        to={"/services"}
+                        className={({isActive}) => 
+                            isActive ? "text-black" : "text-gray"
+                        }
+                    >
+                        Services
+                    </NavLink>
+                </li>
+                <li className='hover:text-black'>
+                    <NavLink
+                        to={"/pricing"}
+                        className={({isActive}) => 
+                            isActive ? "text-black" : "text-gray"
+                        }
+                    >
+                        Pricing
+                    </NavLink>
+                </li>
+                <li className='hover:text-black'>
+                    <NavLink
+                        to={"/contact"}
+                        className={({isActive}) => 
+                            isActive ? "text-black" : "text-gray"
+                        }
+                    >
+                        Contact
+                    </NavLink>
+                </li>
             </ul>
         </div>
         <div className='flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'>
