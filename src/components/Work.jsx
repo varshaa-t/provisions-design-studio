@@ -12,15 +12,15 @@ function Work({animationProps}) {
 
   return (
     <div className='flex flex-col -mx-12 px-12 bg-white'>
-        <div className='flex justify-between items-center mb-24'>
+        <div className='flex flex-col space-y-5 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center mb-24'>
             <motion.div 
-                className='text-[5.1rem] font-medium tracking-tight'
+                className='text-5xl md:text-7xl lg:text-[5.1rem] font-medium tracking-tight'
                 {...animationProps}
             >
                 Our work
             </motion.div>
             <motion.div 
-                className='w-[24vw] text-[1.1rem] leading-7 pt-2 text-[#787979] tracking-tighter'
+                className='lg:w-[24vw] text-[1.1rem] leading-7 pt-2 text-[#787979] tracking-tighter'
                 {...animationProps}
                 transition={{...animationProps.transition, delay: 0.2}}
             >
@@ -28,7 +28,7 @@ function Work({animationProps}) {
                 and visually stunning designs that make a lasting impact.
             </motion.div>
             <motion.button 
-                className='flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl text-lg mt-12 tracking-tight'
+                className='flex space-x-6 items-center w-[190px] lg:w-auto bg-neon-green pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg md:mt-8 lg:mt-12 tracking-tight'
                 onMouseEnter={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
                 {...animationProps}
@@ -41,7 +41,7 @@ function Work({animationProps}) {
                 }   
             </motion.button>
         </div>
-        <div className='flex justify-between space-x-8 mb-40'>
+        <div className='flex flex-col space-y-8 md:flex-row md:justify-between md:space-y-0 md:space-x-8 mb-24 lg:mb-40'>
             <motion.div
                 {...animationProps}
             >
@@ -50,8 +50,8 @@ function Work({animationProps}) {
                     className='rounded-3xl'
                 />
                 <div className='flex items-center justify-between mt-4'>
-                    <div className='text-2xl tracking-tight font-medium'>Exery - Men’s Backpacks Store</div>
-                    <FiArrowUpRight className='text-[3rem] bg-white rounded-full py-3 hover:cursor-pointer hover:bg-neon-green border border-gray-300 hover:border-none'/>
+                    <div className='text-[1.1rem] sm:text-2xl md:text-xl lg:text-2xl tracking-tight font-medium'>Exery - Men’s Backpacks Store</div>
+                    <FiArrowUpRight className='text-4xl sm:text-5xl md:text-4xl lg:text-[3rem] bg-white rounded-full py-2 sm:py-3 md:py-2 lg:py-3 hover:cursor-pointer hover:bg-neon-green border border-gray-300 hover:border-none'/>
                 </div>
             </motion.div>
             <motion.div
@@ -63,8 +63,8 @@ function Work({animationProps}) {
                     className='rounded-3xl'
                 />
                 <div className='flex items-center justify-between mt-4'>
-                    <div className='text-2xl tracking-tight font-medium'>Ccorp - Luxury Jet Company</div>
-                    <FiArrowUpRight className='text-[3rem] bg-white rounded-full py-3 hover:cursor-pointer hover:bg-neon-green border border-gray-300 hover:border-none'/>
+                    <div className='text-[1.1rem] sm:text-2xl md:text-xl lg:text-2xl tracking-tight font-medium'>Ccorp - Luxury Jet Company</div>
+                    <FiArrowUpRight className='text-4xl sm:text-5xl md:text-4xl lg:text-[3rem] bg-white rounded-full py-2 sm:py-3 md:py-2 lg:py-3 hover:cursor-pointer hover:bg-neon-green border border-gray-300 hover:border-none'/>
                 </div>
             </motion.div>
             <motion.div
@@ -76,8 +76,8 @@ function Work({animationProps}) {
                     className='rounded-3xl'
                 />
                 <div className='flex items-center justify-between mt-4'>
-                    <div className='text-2xl tracking-tight font-medium'>Foster - Real Estate Agency</div>
-                    <FiArrowUpRight className='text-[3rem] bg-white rounded-full py-3 hover:cursor-pointer hover:bg-neon-green border border-gray-300 hover:border-none'/>
+                    <div className='text-[1.1rem] sm:text-2xl md:text-xl lg:text-2xl tracking-tight font-medium'>Foster - Real Estate Agency</div>
+                    <FiArrowUpRight className='text-4xl sm:text-5xl md:text-4xl lg:text-[3rem] bg-white rounded-full py-2 sm:py-3 md:py-2 lg:py-3 hover:cursor-pointer hover:bg-neon-green border border-gray-300 hover:border-none'/>
                 </div>
             </motion.div>
         </div>

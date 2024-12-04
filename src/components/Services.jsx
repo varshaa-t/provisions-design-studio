@@ -32,7 +32,7 @@ function Services({animationProps}) {
                 experiences that elevate your brand and deliver real results.
             </motion.div>
             <motion.button 
-                className='flex space-x-6 items-center bg-neon-green w-[180px] lg:w-auto pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl xl:text-lg mt-12 tracking-tight'
+                className='flex space-x-6 items-center bg-neon-green w-[190px] lg:w-auto pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg mt-12 tracking-tight'
                 onMouseEnter={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
                 {...animationProps}
