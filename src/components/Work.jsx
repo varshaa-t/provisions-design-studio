@@ -28,7 +28,7 @@ function Work({animationProps}) {
                 and visually stunning designs that make a lasting impact.
             </motion.div>
             <motion.button 
-                className='flex space-x-6 items-center w-[190px] lg:w-auto bg-neon-green pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg md:mt-8 lg:mt-12 tracking-tight'
+                className='flex space-x-6 items-center w-[190px] lg:w-auto bg-neon-green pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg md:mt-8 lg:mt-12 tracking-tight shine-effect'
                 onMouseEnter={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
                 {...animationProps}
@@ -47,6 +47,7 @@ function Work({animationProps}) {
             >
                 <img 
                     src={workOne}
+                    alt='backpack-store-image'
                     className='rounded-3xl'
                 />
                 <div className='flex items-center justify-between mt-4'>
@@ -60,6 +61,7 @@ function Work({animationProps}) {
             >
                 <img 
                     src={workTwo}
+                    alt='jet-flights-image'
                     className='rounded-3xl'
                 />
                 <div className='flex items-center justify-between mt-4'>
@@ -73,6 +75,7 @@ function Work({animationProps}) {
             >
                 <img 
                     src={workThree}
+                    alt='real-estate-image'
                     className='rounded-3xl'
                 />
                 <div className='flex items-center justify-between mt-4'>

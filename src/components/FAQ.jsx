@@ -80,6 +80,7 @@ function FAQ({animationProps}) {
                 <img
                     className='w-[80vw] h-[30vh] md:w-[40vw] md:h-[470px] object-cover rounded-3xl' 
                     src={faqImage}
+                    alt='faq-keypad'
                 />
             </div>
         </motion.div>

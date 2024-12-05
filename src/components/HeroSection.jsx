@@ -82,7 +82,7 @@ function HeroSection() {
             We're passionate about creating exceptional digital experiences that elevate brands and drive results.
           </motion.div>
           <motion.button 
-            className='flex space-x-6 items-center bg-neon-green pl-4 pr-2 sm:pl-5 sm:pr-3 py-2 rounded-3xl sm:text-lg mt-4 lg:mt-12'
+            className='flex space-x-6 items-center bg-neon-green pl-4 pr-2 sm:pl-5 sm:pr-3 py-2 rounded-3xl sm:text-lg mt-4 lg:mt-12 shine-effect'
             onMouseOver={() => setArrowHover(true)}
             onMouseLeave={() => setArrowHover(false)}
             variants={childVariants1}
@@ -98,16 +98,18 @@ function HeroSection() {
           <motion.img 
             className='bg-white rounded-3xl absolute py-4 px-6 z-10 -top-[10vh] left-[9vw] w-52 sm:w-auto sm:left-[25vw] md:left-[50vw] lg:-top-16 lg:left-28' 
             src={"https://provisions.studio/wp-content/uploads/2024/03/Group-240-2.svg#416"}
+            alt={"roi-graph"}
             variants={childVariants2}
           />
           <motion.img 
-            src={heroPic1} 
             className='w-96 absolute right-[1vw] sm:right-[13vw] md:w-2/3 md:right-[16vw] lg:h-[60%] lg:top-16 lg:-right-6 xl:h-[70%] xl:right-0 xl:top-0'
-            alt="Laptop user"
+            src={heroPic1} 
+            alt={"laptop-user"}
             variants={childVariants2} 
           />
           <motion.img
             src={heroPic2}
+            alt='green-background'
             className='hidden lg:block absolute top-[22rem] left-24'
             variants={childVariants2}
           />

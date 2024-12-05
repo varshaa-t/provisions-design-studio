@@ -35,7 +35,11 @@ function Navbar() {
             <NavLink
               to={"/"}
             >
-              <img className='w-52 h-14 cursor-pointer' src={logo}/>
+              <img 
+                className='w-52 h-14 cursor-pointer' 
+                src={logo} 
+                alt='logo'
+              />
             </NavLink>
           </div>
           <ul className='flex space-x-10 cursor-pointer text-lg tracking-tight relative'>
@@ -112,7 +116,7 @@ function Navbar() {
               </li>
           </ul>
           <button 
-            className='flex space-x-6 items-center bg-black pl-5 pr-3 py-2 rounded-3xl tracking-tighter'
+            className='flex space-x-6 items-center bg-black pl-5 pr-3 py-2 rounded-3xl tracking-tighter shine-effect'
             onMouseOver={() => setArrowHover(true)}
             onMouseLeave={() => setArrowHover(false)}
           >
@@ -195,7 +199,7 @@ function Navbar() {
                 <div>Miami: (123) 456-7890</div>
               </div>
               <button 
-                className='flex space-x-6 items-center bg-black pl-5 pr-3 py-2 mt-8 rounded-3xl tracking-tighter'
+                className='flex space-x-6 items-center bg-black pl-5 pr-3 py-2 mt-8 rounded-3xl tracking-tighter shine-effect'
                 onMouseOver={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
               >

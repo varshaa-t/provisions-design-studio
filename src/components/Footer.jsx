@@ -22,7 +22,7 @@ function Footer() {
                     digital presence that sets you apart from the competition.
                 </div>
                 <button 
-                    className='text-base lg:text-lg flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl mt-12 tracking-tight'
+                    className='text-base lg:text-lg flex space-x-6 items-center bg-neon-green pl-5 pr-3 py-2 rounded-3xl mt-12 tracking-tight shine-effect'
                     onMouseEnter={() => setArrowHover(true)}
                     onMouseLeave={() => setArrowHover(false)}
                 >
@@ -49,6 +49,7 @@ function Footer() {
                 <img 
                     className='w-[290px] h-[80px]'
                     src={logo}
+                    alt='logo'
                 />
             </div>
             <ul className='text-gray flex flex-col lg:items-end space-y-3 text-[1.1rem] tracking-tight hover:cursor-pointer'>

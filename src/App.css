@@ -6,3 +6,12 @@
     --radius: 0.5rem
   }
 }
+
+@layer components{
+  .shine-effect{
+    @apply relative overflow-hidden before:content-[""] before:absolute before:h-24 before:w-5 
+    before:bg-[#f3f3f3] before:shadow-[0_0_10px_#fff] before:blur-[1px] before:opacity-50 
+    before:duration-300 before:-translate-x-16 before:rotate-45 hover:before:translate-x-40 
+    hover:before:translate-y-2
+  }
+}

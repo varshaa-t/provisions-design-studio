@@ -32,7 +32,7 @@ function Services({animationProps}) {
                 experiences that elevate your brand and deliver real results.
             </motion.div>
             <motion.button 
-                className='flex space-x-6 items-center bg-neon-green w-[190px] lg:w-auto pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg mt-12 tracking-tight'
+                className='flex space-x-6 items-center bg-neon-green w-[190px] lg:w-auto pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg mt-12 tracking-tight shine-effect'
                 onMouseEnter={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
                 {...animationProps}
@@ -58,6 +58,7 @@ function Services({animationProps}) {
                 <img 
                     className='w-[85vw] md:w-[40vw] lg:w-[30vw] h-[360px] rounded-3xl object-cover'
                     src={servicesOne}
+                    alt='content-creation-image'
                 />
                 <FiArrowUpRight className='absolute right-4 md:right-14 lg:right-6 top-[18rem] text-[3rem] bg-white rounded-full py-3 hover:cursor-pointer hover:bg-neon-green'/>
             </motion.div>
@@ -74,6 +75,7 @@ function Services({animationProps}) {
                 <img 
                     className='w-[85vw] md:w-[50vw] lg:w-[40vw] h-[450px] rounded-3xl object-cover'
                     src={servicesTwo}
+                    alt='web-design-image'
                 />
                 <FiArrowUpRight className='absolute right-4 lg:right-6 top-[23rem] text-[3rem] bg-white rounded-full py-3 hover:cursor-pointer hover:bg-neon-green'/>
             </motion.div>
@@ -90,6 +92,7 @@ function Services({animationProps}) {
                 <img 
                     className='w-[85vw] sm:w-[85vw] md:w-[40vw] md:mx-[25vw] lg:mx-0 lg:w-[30vw] h-[350px] rounded-3xl object-cover'
                     src={servicesThree}
+                    alt='web-hosting-image'
                 />
                 <FiArrowUpRight className='absolute right-4 md:right-auto md:left-[58vw] lg:left-auto lg:right-6 top-[18rem] text-[3rem] bg-white rounded-full py-3 hover:cursor-pointer hover:bg-neon-green'/>
             </motion.div>

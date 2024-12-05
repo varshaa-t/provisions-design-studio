@@ -9,6 +9,7 @@ function AboutUs({animationProps}) {
     <div className='flex flex-col lg:flex-row justify-between lg:space-x-40 lg:items-center bg-white -mx-12 px-12 pb-24 lg:pb-48'>
         <motion.img 
             src={aboutUs}
+            alt='laptop'
             className='w-[1600px] h-[400px] rounded-[2rem] object-cover'
             {...animationProps}
         />
