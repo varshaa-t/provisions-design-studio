@@ -56,7 +56,7 @@ function HeroSection() {
 
   return (
     <motion.div 
-      className='mt-32 mb-[600px] md:mb-[820px] lg:mb-0 sm:mt-48 grid grid-cols-1 lg:grid-cols-2'
+      className='-ml-5 sm:ml-0 mt-32 mb-[600px] md:mb-[820px] lg:mb-0 sm:mt-48 grid grid-cols-1 lg:grid-cols-2'
       variants={parentVariants}
           initial="hidden"
           animate="show"

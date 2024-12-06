@@ -33,7 +33,7 @@ function FAQ({animationProps}) {
 
   return (
     <div className='-mx-12 px-12 bg-neon-green pt-24 pb-32'>
-        <div className='flex flex-col md:flex-row md:items-center items-start space-x-0 md:space-x-16 lg:space-x-40 pb-10'>
+        <div className='flex flex-col md:flex-row md:items-center items-start space-x-0 md:space-x-16 lg:space-x-40 pb-10 -ml-5 sm:ml-0'>
             <motion.div 
                 className='text-[4rem] lg:text-[5rem] font-medium'
                 {...animationProps}
@@ -41,7 +41,7 @@ function FAQ({animationProps}) {
                 FAQ
             </motion.div>
             <motion.div 
-                className='lg:w-[55vw] text-[1.05rem] leading-7 tracking-tighter lg:tracking-tight'
+                className='w-[85vw] sm:w-auto lg:w-[55vw] text-[1.05rem] leading-7 tracking-tighter lg:tracking-tight'
                 {...animationProps}
                 transition={{...animationProps.transition, delay: 0.2}}
             >

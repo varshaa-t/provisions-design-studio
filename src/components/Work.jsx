@@ -12,7 +12,7 @@ function Work({animationProps}) {
 
   return (
     <div className='flex flex-col -mx-12 px-12 bg-white'>
-        <div className='flex flex-col space-y-5 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center mb-24'>
+        <div className='flex flex-col space-y-5 md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center -ml-5 sm:ml-0 mb-24'>
             <motion.div 
                 className='text-5xl md:text-7xl lg:text-[5.1rem] font-medium tracking-tight'
                 {...animationProps}
@@ -20,7 +20,7 @@ function Work({animationProps}) {
                 Our work
             </motion.div>
             <motion.div 
-                className='lg:w-[24vw] text-[1.1rem] leading-7 pt-2 text-[#787979] tracking-tighter'
+                className='w-[85vw] sm:w-auto lg:w-[24vw] text-[1.1rem] leading-7 pt-2 text-[#787979] tracking-tighter'
                 {...animationProps}
                 transition={{...animationProps.transition, delay: 0.2}}
             >

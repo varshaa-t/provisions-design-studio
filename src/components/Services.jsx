@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { GoArrowRight } from "react-icons/go";
 import { FiArrowUpRight } from "react-icons/fi";
 import { delay, motion } from 'framer-motion';
@@ -15,7 +15,7 @@ function Services({animationProps}) {
         className='pt-24 bg-white -mx-12 px-12 pb-24 lg:pb-48'
     >
         <motion.div 
-            className='flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center mb-16'
+            className='flex flex-col md:grid md:grid-cols-2 lg:flex lg:flex-row lg:justify-between lg:items-center -ml-5 sm:ml-0 mb-16'
         >   
             <motion.div 
                 className='text-5xl md:text-6xl md:mr-10 lg:w-[40vw] leading-[5rem] xl:w-auto lg:text-[5.2rem] tracking-tighter font-medium lg:mr-0'
@@ -24,7 +24,7 @@ function Services({animationProps}) {
                     What we offer
             </motion.div>
             <motion.div 
-                className='sm:w-[85vw] md:w-auto text-[1.1rem] lg:w-[26vw] leading-7 pt-8 text-[#787979] tracking-tighter'
+                className='w-[85vw] md:w-auto text-[1.1rem] lg:w-[26vw] leading-7 pt-8 text-[#787979] tracking-tighter'
                 {...animationProps}
                 transition={{ ...animationProps.transition, delay: 0.2 }}
             >
@@ -32,7 +32,7 @@ function Services({animationProps}) {
                 experiences that elevate your brand and deliver real results.
             </motion.div>
             <motion.button 
-                className='flex space-x-6 items-center bg-neon-green w-[190px] lg:w-auto pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg mt-12 tracking-tight shine-effect'
+                className='flex space-x-6 items-center bg-neon-green w-[180px] lg:w-auto pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-base lg:text-lg mt-12 tracking-tight shine-effect'
                 onMouseEnter={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
                 {...animationProps}

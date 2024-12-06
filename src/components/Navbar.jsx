@@ -127,8 +127,8 @@ function Navbar() {
             }
           </button>
       </div>
-      <div className={`flex lg:hidden justify-between items-center pl-16 pr-12 py-2 ${isScrolled ? 'bg-[rgba(255,255,255,0.5)] backdrop-blur-md' : ''}`}>
-          <div>
+      <div className={`flex lg:hidden justify-between items-center pl-8 pr-8 sm:pl-16 sm:pr-12 py-2 ${isScrolled ? 'bg-[rgba(255,255,255,0.5)] backdrop-blur-md' : ''}`}>
+          <div className='pt-2 sm:pt-0'>
             <NavLink
               to={"/"}
             >
