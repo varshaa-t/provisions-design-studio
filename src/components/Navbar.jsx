@@ -47,7 +47,7 @@ function Navbar() {
                 <NavLink
                   to={"/home"}
                   className={({isActive}) => 
-                    isActive ? "text-black" : "text-gray"
+                    isActive ? "text-black" : "text-light-gray"
                   }  
                 >
                   Home
@@ -56,7 +56,7 @@ function Navbar() {
               <NavLink
                   to={"/services"}
                   className={({isActive}) => 
-                    isActive ? "text-black" : "text-gray"
+                    isActive ? "text-black" : "text-light-gray"
                   }
                 >
                 <li 
@@ -71,7 +71,7 @@ function Navbar() {
                   }
                   {services && 
                     <div 
-                      className='bg-white flex flex-col rounded-xl absolute top-7 left-14 text-gray'
+                      className='bg-white flex flex-col rounded-xl absolute top-7 left-14 text-light-gray'
                       onMouseOver={() => setServices(true)}
                       onMouseLeave={() => setServices(false)}
                     >
@@ -98,7 +98,7 @@ function Navbar() {
                 <NavLink
                   to={"/pricing"}
                   className={({isActive}) => 
-                    isActive ? "text-black" : "text-gray"
+                    isActive ? "text-black" : "text-light-gray"
                   }
                 >
                   Pricing
@@ -108,7 +108,7 @@ function Navbar() {
                 <NavLink
                   to={"/contact"}
                   className={({isActive}) => 
-                    isActive ? "text-black" : "text-gray"
+                    isActive ? "text-black" : "text-light-gray"
                   }
                 >
                   Contact
@@ -151,7 +151,7 @@ function Navbar() {
                     <NavLink
                       to={"/home"}
                       className={({isActive}) => 
-                        isActive ? "text-black" : "text-gray"
+                        isActive ? "text-black" : "text-light-gray"
                       }  
                     >
                       Home
@@ -160,7 +160,7 @@ function Navbar() {
                   <NavLink
                       to={"/services"}
                       className={({isActive}) => 
-                        isActive ? "text-black" : "text-gray"
+                        isActive ? "text-black" : "text-light-gray"
                       }
                     >
                     <li 
@@ -173,7 +173,7 @@ function Navbar() {
                     <NavLink
                       to={"/pricing"}
                       className={({isActive}) => 
-                        isActive ? "text-black" : "text-gray"
+                        isActive ? "text-black" : "text-light-gray"
                       }
                     >
                       Pricing
@@ -183,7 +183,7 @@ function Navbar() {
                     <NavLink
                       to={"/contact"}
                       className={({isActive}) => 
-                        isActive ? "text-black" : "text-gray"
+                        isActive ? "text-black" : "text-light-gray"
                       }
                     >
                       Contact
@@ -193,7 +193,7 @@ function Navbar() {
               <div className='tracking-tight text-[17px] pt-4'>
                 136 Park La Brea Eve Suite 300 Atlanta, GA 30350, USA
               </div>
-              <div className='flex flex-col tracking-tight text-[17px] text-gray pt-4'>
+              <div className='flex flex-col tracking-tight text-[17px] text-light-gray pt-4'>
                 <div>provisions@info</div>
                 <div>Atlanta: (000) 111-2222</div>
                 <div>Miami: (123) 456-7890</div>

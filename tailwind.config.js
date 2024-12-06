@@ -9,7 +9,7 @@ export default {
   	extend: {
   		colors: {
   			'neon-green': '#cdf163',
-  			'gray': '#73748c'
+  			'light-gray': '#73748c'
   		},
   		borderRadius: {
   			lg: 'var(--radius)',

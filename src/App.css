@@ -15,3 +15,7 @@
     hover:before:translate-y-2
   }
 }
+
+.scroll-container::-webkit-scrollbar {
+  display: none; 
+}

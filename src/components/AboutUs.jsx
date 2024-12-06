@@ -23,7 +23,7 @@ function AboutUs({animationProps}) {
                 About Us
             </motion.div>
             <motion.div 
-                className='text-gray w-[80vw] sm:w-auto text-2xl md:text-4xl tracking-tighter'
+                className='text-light-gray w-[80vw] sm:w-auto text-2xl md:text-4xl tracking-tighter'
                 {...animationProps}
                 transition={{...animationProps.transition, delay: 0.4}}
             >

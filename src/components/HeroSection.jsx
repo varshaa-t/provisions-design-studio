@@ -119,7 +119,7 @@ function HeroSection() {
           >
               <FaGoogle className='w-20 h-20'/>
               <div className='text-2xl tracking-tighter'>Google reviews</div>
-              <div className='text-gray tracking-tighter text-lg'>Rating 5, 24 reviews</div>
+              <div className='text-light-gray tracking-tighter text-lg'>Rating 5, 24 reviews</div>
             </motion.div>
         </div>
         <motion.div 

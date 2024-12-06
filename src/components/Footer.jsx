@@ -52,12 +52,12 @@ function Footer() {
                     alt='logo'
                 />
             </div>
-            <ul className='text-gray flex flex-col lg:items-end space-y-3 text-[1.1rem] tracking-tight hover:cursor-pointer'>
+            <ul className='text-light-gray flex flex-col lg:items-end space-y-3 text-[1.1rem] tracking-tight hover:cursor-pointer'>
                 <li className='hover:text-black'>
                     <NavLink
                         to={"/home"}
                         className={({isActive}) =>
-                            isActive ? "text-black" : "text-gray"
+                            isActive ? "text-black" : "text-light-gray"
                         }
                     >
                         Home
@@ -67,7 +67,7 @@ function Footer() {
                     <NavLink
                         to={"/services"}
                         className={({isActive}) => 
-                            isActive ? "text-black" : "text-gray"
+                            isActive ? "text-black" : "text-light-gray"
                         }
                     >
                         Services
@@ -77,7 +77,7 @@ function Footer() {
                     <NavLink
                         to={"/pricing"}
                         className={({isActive}) => 
-                            isActive ? "text-black" : "text-gray"
+                            isActive ? "text-black" : "text-light-gray"
                         }
                     >
                         Pricing
@@ -87,7 +87,7 @@ function Footer() {
                     <NavLink
                         to={"/contact"}
                         className={({isActive}) => 
-                            isActive ? "text-black" : "text-gray"
+                            isActive ? "text-black" : "text-light-gray"
                         }
                     >
                         Contact
@@ -99,7 +99,7 @@ function Footer() {
             <div className='text-center md:text-left'>
                 Copyright © 2024 Provision. All Rights Reserved. | Privacy Policy
             </div>
-            <div className='flex justify-center md:justify-start space-x-4 text-2xl text-gray hover:cursor-pointer'>
+            <div className='flex justify-center md:justify-start space-x-4 text-2xl text-light-gray hover:cursor-pointer'>
                 <FaLinkedinIn className='hover:text-black'/>
                 <FaInstagram className='hover:text-black'/>
             </div>
