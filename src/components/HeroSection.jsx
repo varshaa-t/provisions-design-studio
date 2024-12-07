@@ -96,13 +96,13 @@ function HeroSection() {
         </div>
         <div className='relative top-32 lg:top:0'>
           <motion.img 
-            className='bg-white rounded-3xl absolute py-4 px-6 z-10 -top-[10vh] left-[9vw] w-52 sm:w-auto sm:left-[25vw] md:left-[50vw] lg:-top-16 lg:left-28' 
+            className='bg-white rounded-3xl absolute py-4 px-6 z-10 -top-[10vh] left-[14vw] w-52 sm:w-auto sm:left-[25vw] md:left-[50vw] lg:-top-16 lg:left-28' 
             src={"https://provisions.studio/wp-content/uploads/2024/03/Group-240-2.svg#416"}
             alt={"roi-graph"}
             variants={childVariants2}
           />
           <motion.img 
-            className='w-96 absolute right-[1vw] sm:right-[13vw] md:w-2/3 md:right-[16vw] lg:h-[60%] lg:top-16 lg:-right-6 xl:h-[70%] xl:right-0 xl:top-0'
+            className='w-96 absolute -right-[2vw] sm:right-[13vw] md:w-2/3 md:right-[16vw] lg:h-[60%] lg:top-16 lg:-right-6 xl:h-[70%] xl:right-0 xl:top-0'
             src={heroPic1} 
             alt={"laptop-user"}
             variants={childVariants2} 

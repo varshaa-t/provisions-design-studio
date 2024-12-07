@@ -139,7 +139,7 @@ function Navbar() {
             <SheetTrigger>
               <RxHamburgerMenu className='text-3xl'/>
             </SheetTrigger>
-            <SheetContent className="flex flex-col items-start pl-12">
+            <SheetContent className="flex flex-col items-start pl-6 sm:pl-12">
               <SheetHeader>
                 <SheetTitle className="flex justify-center py-4">
                 </SheetTitle>
