@@ -13,7 +13,7 @@ function AboutUs({animationProps}) {
             className='w-[1600px] h-[400px] rounded-[2rem] object-cover'
             {...animationProps}
         />
-        <div className='flex flex-col space-y-2 lg:space-y-10 mt-16 lg:mt-0'>
+        <div className='flex flex-col space-y-2 lg:space-y-10 mt-16 -ml-5 sm:ml-0 lg:mt-0'>
             <motion.div 
                 className='flex items-center justify-start border border-slate-500 w-32 rounded-3xl px-4 py-2'
                 {...animationProps}
@@ -23,7 +23,7 @@ function AboutUs({animationProps}) {
                 About Us
             </motion.div>
             <motion.div 
-                className='text-light-gray w-[80vw] sm:w-auto text-2xl md:text-4xl tracking-tighter'
+                className='text-light-gray w-[85vw] sm:w-auto text-2xl md:text-4xl tracking-tighter'
                 {...animationProps}
                 transition={{...animationProps.transition, delay: 0.4}}
             >
