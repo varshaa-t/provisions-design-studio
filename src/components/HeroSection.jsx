@@ -82,7 +82,7 @@ function HeroSection() {
             We're passionate about creating exceptional digital experiences that elevate brands and drive results.
           </motion.div>
           <motion.button 
-            className='flex space-x-6 items-center bg-neon-green pl-4 pr-2 sm:pl-5 sm:pr-3 py-2 rounded-3xl sm:text-lg mt-4 lg:mt-12 shine-effect'
+            className='flex space-x-6 items-center bg-neon-green pl-4 pr-2 py-1 sm:pl-5 sm:pr-3 sm:py-2 rounded-3xl sm:text-lg mt-4 lg:mt-12 shine-effect'
             onMouseOver={() => setArrowHover(true)}
             onMouseLeave={() => setArrowHover(false)}
             variants={childVariants1}

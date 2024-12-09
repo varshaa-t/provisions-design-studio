@@ -11,7 +11,7 @@ function Footer() {
   return (
     <div className='bg-white -mx-12 px-6 md:px-12 pt-20 md:pt-32 flex flex-col pb-6'>
         <div className='flex flex-col md:flex-row justify-between'>
-            <div className='text-left w-[350px] text-5xl md:text-[4rem] md:w-[37vw] md:leading-[5.5rem] lg:text-[5rem] font-medium tracking-tight'>
+            <div className='text-left w-[250px] text-4xl sm:w-[350px] sm:text-5xl md:text-[4rem] md:w-[37vw] md:leading-[5.5rem] lg:text-[5rem] font-medium tracking-tight'>
                 <div>
                     We're ready! Let’s collaborate
                 </div>
@@ -47,7 +47,7 @@ function Footer() {
             </div>
             <div className='lg:-ml-20'>
                 <img 
-                    className='w-[290px] h-[80px]'
+                    className='w-60 sm:w-[290px] sm:h-[80px]'
                     src={logo}
                     alt='logo'
                 />

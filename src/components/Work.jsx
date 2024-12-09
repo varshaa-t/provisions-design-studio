@@ -28,7 +28,7 @@ function Work({animationProps}) {
                 and visually stunning designs that make a lasting impact.
             </motion.div>
             <motion.button 
-                className='flex space-x-6 items-center w-[190px] lg:w-auto bg-neon-green pl-4 pr-2 py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl text-lg md:mt-8 lg:mt-12 tracking-tight shine-effect'
+                className='flex space-x-6 items-center w-[175px] sm:w-[190px] lg:w-auto bg-neon-green pl-4 py-1 sm:pr-2 sm:py-1 xl:pl-5 xl:pr-3 xl:py-2 rounded-3xl sm:text-lg md:mt-8 lg:mt-12 tracking-tight shine-effect'
                 onMouseEnter={() => setArrowHover(true)}
                 onMouseLeave={() => setArrowHover(false)}
                 {...animationProps}
