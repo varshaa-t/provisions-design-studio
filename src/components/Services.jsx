@@ -45,7 +45,7 @@ function Services({animationProps}) {
                 }   
             </motion.button>
         </motion.div>
-        <div className='grid grid-cols-1 gap-y-10 md:gap-y-0 md:grid-cols-2 lg:flex lg:justify-between lg:space-x-8'>
+        <div className='grid grid-cols-1 -ml-4 sm:ml-0 w-[85vw] sm:w-auto gap-y-10 md:gap-y-0 md:grid-cols-2 lg:flex lg:justify-between lg:space-x-8'>
             <motion.div 
                 className='relative'
                 {...animationProps}

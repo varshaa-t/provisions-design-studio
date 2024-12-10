@@ -51,7 +51,7 @@ function FAQ({animationProps}) {
             </motion.div>
         </div>
         <motion.div 
-            className='flex flex-col space-y-8 md:space-y-0 md:flex-row justify-between'
+            className='flex flex-col -ml-5 sm:ml-0 w-[85vw] sm:w-auto space-y-8 md:space-y-0 md:flex-row justify-between'
             {...animationProps}
             transition={{...animationProps.transition, delay: 0.4}}
         >
@@ -63,7 +63,7 @@ function FAQ({animationProps}) {
                             onClick={() => toggleAccordion(index)}
                             className='flex justify-between w-full items-center pb-2 px-2'
                         >
-                            <div className='text-left w-[55vw] sm:w-auto md:w-[40vw] text-lg'>{content.question}</div>
+                            <div className='text-left w-[60vw] sm:w-auto md:w-[40vw] text-lg'>{content.question}</div>
                             {accordionOpen[index] ? 
                                 <FaMinus className='bg-black text-white py-2 text-3xl rounded-full'/> :
                                 <FaPlus className='bg-black text-white py-2 text-3xl rounded-full'/>
@@ -78,7 +78,7 @@ function FAQ({animationProps}) {
             </div>
             <div>
                 <img
-                    className='w-[80vw] h-[30vh] md:w-[40vw] md:h-[470px] object-cover rounded-3xl' 
+                    className='w-[85vw] h-[30vh] md:w-[40vw] md:h-[470px] object-cover rounded-3xl' 
                     src={faqImage}
                     alt='faq-keypad'
                 />

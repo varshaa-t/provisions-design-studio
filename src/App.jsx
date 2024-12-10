@@ -31,16 +31,16 @@ function App() {
 
   return (
     <BrowserRouter>
-        <div className='bg-[#c6cec5] px-12 pt-2 selection:bg-[#a2bd52] selection:text-white'>
-          <Navbar/>
-          <HeroSection/>
-          <Brands/>
-          <Services animationProps={animationProps}/>
-          <AboutUs animationProps={animationProps}/>
-          <Work animationProps={animationProps}/>
-          <FAQ animationProps={animationProps}/>
-          <Footer/>
-        </div>
+      <div className='bg-[#c6cec5] px-12 pt-2 selection:bg-[#a2bd52] selection:text-white'>
+        <Navbar/>
+        <HeroSection/>
+        <Brands/>
+        <Services animationProps={animationProps}/>
+        <AboutUs animationProps={animationProps}/>
+        <Work animationProps={animationProps}/>
+        <FAQ animationProps={animationProps}/>
+        <Footer/>
+      </div>
     </BrowserRouter>
   )
 }

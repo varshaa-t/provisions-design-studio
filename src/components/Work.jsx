@@ -41,7 +41,7 @@ function Work({animationProps}) {
                 }   
             </motion.button>
         </div>
-        <div className='flex flex-col space-y-8 md:flex-row md:justify-between md:space-y-0 md:space-x-8 mb-24 lg:mb-40'>
+        <div className='flex flex-col -ml-4 sm:ml-0 w-[85vw] sm:w-auto space-y-8 md:flex-row md:justify-between md:space-y-0 md:space-x-8 mb-24 lg:mb-40'>
             <motion.div
                 {...animationProps}
             >
